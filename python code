@@ -1,1 +1,7 @@
-
+The code defines a simple blockchain implementation with a Blockchain class and a block class.
+The block class has three attributes: data, hash, and last_hash.
+The Blockchain class has a list of blocks, starting with a genesis block created in the constructor method.
+There is also a add_block method that takes in data, creates a new block with a hash and a reference to the previous block's hash, and appends it to the chain.
+The lightning_hash function simply concatenates an asterisk to the input data.
+When executed, the code creates a new Blockchain instance, adds three blocks to the chain, and then prints out the attributes of each block in the chain using the __dict__ method.
+The output will show the data, hash, and last_hash attributes for each block in the chain. The first block will have gen_data as the data and the hardcoded values gen_hash and gen_last_hash as the hash and last hash respectively. The next three blocks will have the input data and a hash created by concatenating the data and the hash of the previous block with an asterisk using the lightning_hash function. The last hash of each block will be the hash of the previous block in the chain.
